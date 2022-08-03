@@ -45,7 +45,7 @@
 }
 
 #nav ul li a:hover {
-    color: rgb(248, 178, 137);
+    color: rgb(237, 202, 182);
 }
 
 #header {
@@ -115,13 +115,12 @@
     justify-content: space-around;
     padding-top: 30px;
     position: relative;
-    
 }
 
 .box {
     width: 350px;
     height: 350px;
-    background-color: white;
+    background-color: rgb(251, 248, 248);
     box-shadow: 0 4px 8px 0 rgba(253, 239, 225, 0.19), 0 6px 20px 0 rgba(253, 239, 225, 0.19);
 }
 
