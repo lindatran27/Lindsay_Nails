@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointmentsStyle.css">
+
+</head>
+<body>
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="calendar">
+          <div class="front">
+            <div class="current-date">
+              <h1 id="day"></h1>
+              <h1>August 2022</h1>	
+            </div>
+      
+            <div class="current-month">
+              <ul class="week-days">
+                <li>SUN</li>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+              </ul>
+      
+              <div class="weeks">
+                <div class="first">
+                  <span class="last-month">31</span>
+                  <span>01</span>
+                  <span>02</span>
+                  <span class="active">03</span>
+                  <span>04</span>
+                  <span>05</span>
+                  <span>06</span>
+                </div>
+      
+                <div class="second">
+                  <span>07</span>
+                  <span>08</span>
+                  <span>09</span>
+                  <span>10</span>
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                </div>
+      
+                <div class="third">
+                  <span>14</span>
+                  <span>15</span>
+                  <span>16</span>
+                  <span>17</span>
+                  <span>18</span>
+                  <span>19</span>
+                  <span>20</span>
+                </div>
+      
+                <div class="fourth">
+                  <span>21</span>
+                  <span>22</span>
+                  <span>23</span>
+                  <span>24</span>
+                  <span>25</span>
+                  <span>26</span>
+                  <span>27</span>
+                </div>
+      
+                <div class="fifth">
+                  <span>28</span>
+                  <span>29</span>
+                  <span>30</span>
+                  <span>31</span>
+                  <span class="last-month">01</span>
+                  <span class="last-month">02</span>
+                  <span class="last-month">03</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="back">
+            <input placeholder="Write your name">
+            <div class="info">
+              <div class="date">
+                <p class="info-date">
+                Date: <span id="numDate"></span>
+                </p>
+                <p class="info-time">
+                  Time: <span>8:00 AM</span>
+                </p>
+              </div>
+              <div class="address">
+                <p>
+                  Service? <input placeholder="Let us know what we can do for you.">
+                </p>
+              </div>
+              <div class="observations">
+                <p>
+                  Observations: <span>Be there 15 minutes earlier</span>
+                </p>
+              </div>
+            </div>
+      
+            <div class="actions">
+              <button class="save">
+                Book Appointment <i class="ion-checkmark"></i>
+              </button>
+              <button class="dismiss">
+                Dismiss <i class="ion-android-close"></i>
+              </button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script><script  src="appointments.js"></script>
+
+
+      <footer>
+        <div id="info">
+            <h2>Our Main Location</h2>
+            <h3>123 Main Street, City, ST, 12345</h3>
+            <h4>Located on the right side of Whole Foods</h4>
+
+            <h2>Follow Us</h2>
+        </div>
+        
+        <div id="map">
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtD4PaJ-ghSw7q3D6HHEGlCmeVyYJ1vUU&callback=myMap"
+            defer></script>    
+        </div>
+        <script src="maps.js"></script>
+    </footer>
+</body>
+</html>
+
+<!-- <div id="current_date"></p>
+    <script>
+    date = new Date();
+    year = date.getFullYear();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+    document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+    </script> -->
