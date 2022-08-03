@@ -83,6 +83,9 @@
     text-decoration: none;
 }
 
+#header a:active {
+    background-color:rgb(247, 227, 215);
+}
 /**
 * service section
 */
