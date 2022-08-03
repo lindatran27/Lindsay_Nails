@@ -83,11 +83,6 @@
     text-decoration: none;
 }
 
-#header a:hover, a:active {
-    background-color: #faddcb;
-}
-
-
 /**
 * service section
 */
