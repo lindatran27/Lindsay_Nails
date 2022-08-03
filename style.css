@@ -175,10 +175,45 @@ footer {
 
 /*this is the location and social media*/
 #info {
-     
+    position: relative;
     color: #be8262;
     font-size: 23px;
 }
+
+#info h2 {
+    font-family: 'Poller One', cursive;
+    font-size: 45px;
+}
+
+#info h3 {
+    font-size: 24px;
+}
+
+#info h4 {
+    font-size: 16px;
+}
+
+hr {
+    border: 2px solid #be8262;
+
+}
+
+#followUs {
+    margin-top: 5%;
+}
+
+#socMed img {
+    height: 45px;
+    width: 45px;    
+    padding: 5px;
+    border-radius: 15%;
+}
+
+#socMed a {
+    text-decoration: none;
+}
+
+
 
 /*the map portion*/
 #map {

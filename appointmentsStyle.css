@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     list-style: none;
     margin: 0;
     outline: none;
@@ -16,33 +16,54 @@
   }
   
   body {
-      background: #faf2ed;
+      background-image: url("/images/calendar_background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
       font-family: 'Roboto', sans-serif;
   }
 
+/* nav */
   nav {
     position: relative;
-    margin-top: 5%;
-    text-align: right;
+    margin-top: 1%;
+    text-align: center;
   }
 
   nav ul {
     text-decoration: none;
     font-size: 25px;
+    color: white;
   }
 
   nav ul li {
+    padding: 10px 10px;
     display: inline;
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  nav ul li a {
+    color: white;
+    text-shadow: 2px 2px 8px #fffef8;
+  }
+
+  nav ul li a:hover {
+    color: rgb(237, 202, 182);
+}
+
+  nav h1 {
+    position: absolute;
+    color: white;
+    font-size: 65px;
+    top: 90px;
+    left: 40%;
+    font-family: 'Allura', cursive;
+    text-shadow: 0 0 10px #ffe9be;
   }
 
 
 
-
-
-
-
-
-
+/*calendar*/
   
   .container {
       align-items: center;
@@ -55,9 +76,9 @@
   }
   
   .calendar {
-      background: #d8a57b;
+      background: #d4aa8a;
       border-radius: 4px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
       height: 501px;
     perspective: 1000;
       transition: .9s;
@@ -71,7 +92,7 @@
   }
   
   .current-date {
-      border-bottom: 1px solid rgba(73, 114, 133, .6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
       display: flex;
       justify-content: space-between;
       padding: 30px 40px;
@@ -154,8 +175,8 @@
   .back input {
       background: none;
       border: none;
-      border-bottom: 1px solid rgba(73, 114, 133, .6);
-      color: #dfebed;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      color: #fcf5e9;
       font-size: 1.4em;
       font-weight: 300;
       padding: 30px 40px;
@@ -163,7 +184,7 @@
   }
   
   .info {
-      color: #dfebed;
+      color: #fcf5e9;
       display: flex;
       flex-direction: column;
       font-weight: 600;
@@ -195,8 +216,8 @@
   .info .address input {
     background: none;
     border: none;
-    border-bottom: 1px solid rgba(73, 114, 133, .6);
-    color: #dfebed;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fcf5e9;
     font-size: 1.1em;
     font-weight: 300;
     padding: 5px 40px;
@@ -205,7 +226,7 @@
   
   .actions {
       bottom: 0;
-      border-top: 1px solid rgba(73, 114, 133, .6);
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
       display: flex;
       justify-content: space-between;
       position: absolute;
@@ -225,16 +246,16 @@
   }
   
   .actions button:first-of-type {
-      border-right: 1px solid rgba(73, 114, 133, .6);
+      border-right: 1px solid rgba(255, 255, 255, 0.6);
   }
   
   .actions button:hover {
-      background: #497285;
+      background: #f4d4c0;
       cursor: pointer;
   }
   
   .actions button:active {
-      background: #5889a0;
+      background: #f6dfd1;
       outline: none;
   }
   
@@ -248,7 +269,7 @@
       backface-visibility: hidden;
   }
 
-  /**
+/**
 * map section
 */
 
@@ -260,14 +281,52 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: -2%;
 }
 
 /*this is the location and social media*/
 #info {
-     
+    position: relative;
     color: #be8262;
     font-size: 23px;
 }
+
+#info h2 {
+    font-family: 'Poller One', cursive;
+    font-size: 45px;
+}
+
+#info h3 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#info h4 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 2px solid #be8262;
+
+}
+
+#followUs {
+    margin-top: 5%;
+}
+
+#socMed img {
+    height: 45px;
+    width: 45px;    
+    padding: 5px;
+    border-radius: 15%;
+}
+
+#socMed a {
+    text-decoration: none;
+}
+
+
 
 /*the map portion*/
 #map {
